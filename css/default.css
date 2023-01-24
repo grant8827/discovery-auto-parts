@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #111;
+    --color-border: #DD9933;
+    --color-frame: #D11944;
+}

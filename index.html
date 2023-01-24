@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Auto</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="site-id">
+                <img src="./assets/images/logo.jpg" />
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <hr/>
+        <div class="search-area">
+            <div class="dropdown-cat">
+                <input type="search" name="search" placeholder="Select a Category" />
+                <span><i class="fas fa-sort-down" onClick="myFunction()"></i></i></span>
+
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Search Products..." name="search">
+                <button type="button">Submit</button>
+            </div>
+            <div class="cart">
+                <p>$0.00</p>
+                <span><i class="fa-solid fa-bag-shopping"></i></span>
+
+            </div>
+
+        </div>
+    </nav>
+    <ul id="toggle" class="category-list">
+        <li><a href="#">Air Conditioner</a></li>
+        <li><a href="#">Electronic</a></li>
+        <li><a href="#">Lubricants</a></li>
+        <li><a href="#">Engine Parts</a></li>
+        <li><a href="#">Suspension Parts</a></li>
+    </ul>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
