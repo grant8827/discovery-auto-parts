@@ -136,3 +136,12 @@ hr {
     color: var(--color-white);
     margin: 10px 0 0 5px;
 }
+.page-head{
+    display: flex;
+    justify-content: space-around;
+}
+.car-models{
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 10px 15px rgba(187, 21, 70, .4);
+}

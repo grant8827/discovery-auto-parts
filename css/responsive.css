@@ -10,6 +10,40 @@
     padding: 10px;
 
    }
+   .search input {
+    width: 300px;
+}
+}
+@media only screen and (max-width:766px){
+    .links li{
+padding: 10px;
+    }
+    .links a{
+font-size: 15px;
+    }
+    .site-id img{
+        width: 150px;
+    }
+    .search-area{
+        display: block;
+        height: auto;
+       text-align: center; 
+       padding: 10px;
+    }
+    .cart{
+        margin: auto;
+    }
+    .dropdown-cat{
+        margin: auto;
+    }
+    .dropdown-cat #category{
+        margin: 0 0 0px 0;
+        width: 400px;
+        height: 25px;
+    }
+    .search{
+        margin: 20px;
+    }
 }
 
 
