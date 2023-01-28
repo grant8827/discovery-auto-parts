@@ -413,10 +413,84 @@ img {
 
 
 /*footer*/
-
+.footer{
+    background-color: var(--color-frame);
+}
 .foot-area {
     width: 100%;
     height: auto;
-    background-color: var(--color-frame);
-    padding: 200px;
+}
+.foot-area p {
+   color: var(--color-white);
+}
+.foot-area h2 {
+   color: var(--color-white);
+}
+.top-foot{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    padding: 50px;
+}
+.foot1 {
+    width: 200px;
+}
+.foot2 {
+    width: 200px;
+}
+.foot2 li{
+    color: var(--color-white);
+    padding: 7px;
+}
+.foot2 a{
+    text-decoration: none;
+    color: rgb(22, 148, 231);
+}
+.foot2 a:hover{
+    color: rgb(43, 54, 61);
+}
+.foot3 {
+    width: 200px;
+    text-align: left;
+}
+.foot4 {
+    width: 200px;
+    text-align: center;
+}
+.foot1 img{
+    width: 200px;
+}
+.bottom-foot{
+    padding: 20px;
+    text-align: center;
+}
+.bottom-foot p{
+   font-size: 12px;
+   color: var(--color-white);
+}
+.bottom-foot i{
+   font-size: 15px;
+   color: var(--color-white);
+   margin-left: 10px;
+   
+}
+.fa-facebook-f{
+  padding: 7px;
+    background-color:rgb(22, 148, 231);;
+width: 30px;
+}
+.fa-twitter{
+  padding: 7px;
+    background-color:rgb(61, 163, 231);;
+width: 30px;
+}
+.fa-instagram{
+  padding: 7px;
+    background-color:rgb(235, 42, 42);;
+width: 30px;
+}
+.fa-whatsapp{
+  padding: 7px;
+    background-color:rgb(29, 231, 22);;
+width: 30px;
 }
