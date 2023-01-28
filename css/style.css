@@ -33,7 +33,8 @@
 .links a:active {
     color: rgb(26, 23, 202);
 }
-#menu-bars{
+
+#menu-bars {
     display: none;
 }
 
@@ -77,9 +78,10 @@ hr {
     background-color: #fffefe;
     border-radius: 5px;
     height: auto;
-    width: 180px;
-    margin: -10px 0 0 120px;
+    width: 150px;
+    margin: -18px 0 0 455px;
     border: 1px solid #888888;
+    position: absolute;
 }
 
 .category-list li {
@@ -91,7 +93,7 @@ hr {
     padding: 10px;
     line-height: 50px;
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .category-list a:hover {
@@ -136,12 +138,285 @@ hr {
     color: var(--color-white);
     margin: 10px 0 0 5px;
 }
-.page-head{
+
+.page-head {
     display: flex;
     justify-content: space-around;
 }
-.car-models{
+
+
+/*header*/
+
+.page-head {
+    margin-top: 10px;
+    height: auto;
+    width: fit-content;
+    margin: auto;
+}
+
+.car-models {
+    width: 350px;
+    height: auto;
+    box-shadow: 5px 10px 15px rgb(197, 131, 31, .5);
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.cat-head h2 {
+    background: var(--color-frame);
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    color: var(--color-white);
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.cat-list {
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+
+.cat-list li {
+    padding: 10px;
+    color: var(--color-border);
+}
+
+.cat-list a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    color: rgb(24, 95, 227);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cat-list a:hover {
+    color: #111;
+}
+
+
+/*slider*/
+
+.slide-area {
+    display: flex;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    width: auto;
+    height: 600px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.head-products {
     width: 300px;
-    height: 500px;
-    box-shadow: 5px 10px 15px rgba(187, 21, 70, .4);
+    height: auto;
+    box-shadow: 5px 10px 15px rgba(204, 22, 77, 0.5);
+    margin-left: 20px;
+    text-align: center;
+}
+
+.pro-tire img,
+.pro-rim img,
+.pro-battery img {
+    width: 150px;
+}
+
+.pro-tire {
+    width: 250px;
+    border: 2px solid var(--color-border);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.pro-rim {
+    width: 250px;
+    border: 2px solid var(--color-border);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.pro-battery {
+    width: 250px;
+    border: 2px solid var(--color-border);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.head-products h3 {
+    color: var(--color-frame);
+}
+
+
+/*product display*/
+
+.pro-list-display img {
+    width: 250px;
+    cursor: pointer;
+}
+
+.pro-list-display p {
+    text-align: center;
+    color: rgb(26, 146, 231);
+    cursor: pointer;
+}
+
+.pro-list-display p:hover {
+    color: rgb(38, 38, 39);
+}
+
+.products-area {
+    width: auto;
+    margin-top: 10px;
+    box-shadow: 15px 5px 10px 10px rgba(221, 169, 27, .5);
+}
+
+.products-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 70%;
+    margin: auto;
+}
+
+
+/*footer*/
+
+.foot-area {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-frame);
+    padding: 200px;
 }

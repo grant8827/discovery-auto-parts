@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
         <div class="search-area">
             <div class="dropdown-cat">
                 <input id="category" type="search" name="Category" placeholder="Select a Category" />
-                <span><i class="fas fa-sort-down" onClick="myFunction()"></i></i></span>
+                <span><i class="fas fa-sort-down" id="dropDownCat"></i></i></span>
 
             </div>
 
@@ -41,10 +43,10 @@
                 <button type="button">Submit</button>
             </div>
             <div class="cart">
-                
+
                 <p>$0.00</p>
                 <span><i class="fa-solid fa-bag-shopping"></i></span>
-            
+
             </div>
 
         </div>
@@ -57,26 +59,172 @@
         <li><a href="#">Suspension Parts</a></li>
     </ul>
 
-<section>
-    <div class="page-head">
-        <div class="car-models">
-<p>hello from car products</p>
+    <section>
+        <div class="page-head">
+            <div class="car-models">
+                <span class="cat-head"><h2>We Sell Parts For</h2></span>
+                <ul class="cat-list">
+                    <li><a href="#">Toyota</a></li>
+                    <li><a href="#">Honda</a></li>
+                    <li><a href="#">Nissan</a></li>
+                    <li><a href="#">Mitsubishi</a></li>
+                    <li><a href="#">Mazda</a></li>
+                    <li><a href="#">Subaru</a></li>
+                    <li><a href="#">Ford</a></li>
+                    <li><a href="#">Hyundai</a></li>
+                    <li><a href="#">Isuzu</a></li>
+                    <li><a href="#">Suzuki</a></li>
+                </ul>
+            </div>
+            <div class="slide-area">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="./assets/images/slide1.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="./assets/images/slide2.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="./assets/images/slide3.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+
+
+
+                <div class="head-products">
+                    <div class="pro-tire">
+                        <img src="./assets/images/car-tire.jpg" alt="product img tire" />
+
+                    </div>
+                    <h3>Tires</h3>
+                    <div class="pro-rim">
+                        <img src="./assets/images/car-rim.png" alt="product img rims" />
+
+                    </div>
+                    <h3>Rims</h3>
+                    <div class="pro-battery">
+                        <img src="./assets/images/car-battery.png" alt="product img battery" />
+
+                    </div>
+                    <h3>Battery</h3>
+                </div>
+            </div>
+    </section>
+
+    <section class="products-area">
+        <div class="products-display">
+            <div class="pro-list-display">
+                <img src="./assets/images/Air fliter.jpg" alt="product img" />
+                <p>Air Filter</p>
+            </div>
+            <div class="pro-list-display suspension">
+                <img src="./assets/images/555 suspention.png" alt="product img" />
+                <p>555 Suspension</p>
+            </div>
+            <div class="pro-list-display refresh">
+                <img src="./assets/images/Car-Fresheners.png " alt="product img" />
+                <p>Car Air Fresheners</p>
+            </div>
+            <div class="pro-list-display seat">
+                <img src="./assets/images/seat-cover.png" alt="product img" />
+                <p>Car seat cover</p>
+            </div>
+            <div class="pro-list-display b-light">
+                <img src="./assets/images/bumper-light.png" alt="product img" />
+                <p>Flag Lamp</p>
+            </div>
+            <div class="pro-list-display head-light">
+                <img src="./assets/images/headlight.png" alt="product img" />
+                <p>Head Lamp</p>
+            </div>
+            <div class="pro-list-display break-light">
+                <img src="./assets/images/Break LIght.jpg" alt="product img" />
+                <p>Break Light</p>
+            </div>
+            <div class="pro-list-display led-bulb">
+                <img src="./assets/images/led-bulb.png" alt="product img" />
+                <p>Head Lamp Bulb</p>
+            </div>
+            <div class="pro-list-display seal">
+                <img src="./assets/images/tomos-seal-BLACK-set-2.jpg" alt="product img" />
+                <p>Engine Seals</p>
+            </div>
+            <div class="pro-list-display sensor">
+                <img src="./assets/images/engine-speed-sensor.jpg" alt="product img" />
+                <p>Sensor</p>
+            </div>
+            <div class="pro-list-display air-filter">
+                <img src="./assets/images/Air fliter.jpg" alt="product img" />
+                <p>Air Filter</p>
+            </div>
+            <div class="pro-list-display belt">
+                <img src="./assets/images/ribbed-belts.jpg" alt="product img" />
+                <p>Drive Belt</p>
+            </div>
+            <div class="pro-list-display oil">
+                <img src="./assets/images/service-kit.png" alt="product img" />
+                <p>Oil Change</p>
+            </div>
+            <div class="pro-list-display">
+                <img src="./assets/images/shocks.jpg" alt="product img" />
+                <p>Set of Shocks & Struts</p>
+            </div>
+            <div class="pro-list-display">
+                <img src="./assets/images/radiator.jpg" alt="product img" />
+                <p>Radiators</p>
+            </div>
+            <div class="pro-list-display">
+                <img src="./assets/images/clutch-kit.jpg" alt="product img" />
+                <p>Clutch & pressure plate</p>
+            </div>
+            <div class="pro-list-display">
+                <img src="./assets/images/wheel-hub-assembly_1.jpg" alt="product img" />
+                <p>Wheel Bearings</p>
+            </div>
+            <div class="pro-list-display">
+                <img src="./assets/images/alternator.jpg" alt="product img" />
+                <p>Alternator</p>
+            </div>
+            <div class="pro-list-display">
+                <img src="./assets/images/bumper.jpg" alt="product img" />
+                <p>bUMPER</p>
+            </div>
+            <div class="pro-list-display">
+                <img src="./assets/images/tools.png" alt="product img" />
+                <p>Tools</p>
+            </div>
         </div>
-        <div class="slide-area">
-<p>hello from slide area</p>
+    </section>
+    <footer>
+        <div class="foot-area">
+            <div class="top-foot">
+                <h1>top footer</h1>
+            </div>
+            <hr>
+            <div class="bottom-foot">
+                <h1>top footer</h1>
+            </div>
         </div>
-        <div class="head-products">
-<p>hello from products area</p>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 

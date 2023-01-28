@@ -1,8 +1,46 @@
-function myFunction() {
-    var downArrow = document.getElementById("toggle");
+const dropDown = document.getElementById("dropDownCat");
+const downArrow = document.getElementById("toggle");
+
+dropDown.addEventListener("click", function(slow) {
     if (downArrow.style.display === "block") {
         downArrow.style.display = "none";
     } else {
         downArrow.style.display = "block";
+    };
+});
+
+
+
+
+$(document).ready(function() {
+    $("#menu-bars").click(function() {
+        $(".links").toggle('slow');
+    });
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
