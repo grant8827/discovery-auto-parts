@@ -1,0 +1,75 @@
+/*my account pare login for*/
+
+.form-sign-in {
+    width: fit-content;
+    height: auto;
+    border: 1px solid #bbb;
+    margin: auto;
+    margin-top: 150px;
+    padding: 30px;
+    margin-bottom: 150px;
+}
+
+.form-sign-in span {
+    color: red;
+}
+
+#email {
+    width: 650px;
+    margin: 10px;
+    padding: 13px;
+    background-color: #E8F0FE;
+    border: none;
+    margin-bottom: 25px;
+}
+
+#password {
+    width: 650px;
+    margin: 10px;
+    padding: 13px;
+    background-color: #E8F0FE;
+    border: none;
+}
+
+#button {
+    padding: 12px;
+    width: 130px;
+    background-color: rgb(12, 126, 255);
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.form-sign-in a {
+    text-decoration: none;
+    color: rgb(21, 154, 250);
+}
+
+.lab {
+    margin: 10px;
+}
+
+
+/*shop page*/
+
+.shop-head {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin: auto;
+    padding-right: 20px;
+    margin-top: 80px;
+}
+
+#select-option {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #bbb;
+    width: fit-content;
+    font-size: 20px;
+}
+
+#select-option option {
+    font-size: 20px;
+}

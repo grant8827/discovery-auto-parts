@@ -11,13 +11,24 @@
     .search input {
         width: 300px;
     }
+    .pro-list-display img {
+        width: 150px;
+        cursor: pointer;
+    }
+    .products-display {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .top-foot {
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width:766px) {
     .links {
         display: none;
         width: 500px;
-        height: 400px;
+        height: 450px;
         background-color: var(--color-white);
         z-index: 11;
     }
@@ -33,6 +44,7 @@
         display: block;
         font-size: 50px;
         margin: auto;
+        cursor: pointer;
     }
     .site-id img {
         width: 150px;
@@ -60,9 +72,27 @@
     .search {
         margin: 20px;
     }
+    .car-models {
+        display: none;
+    }
+    .slide-area {
+        display: block;
+    }
+    .head-products {
+        width: auto;
+        margin-top: 30px;
+    }
+    .slideshow-container {
+        margin-top: 20px;
+    }
+    .mySlides img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
 }
 
-@media only screen and (max-width:499px) {
+@media only screen and (max-width:576px) {
     .dropdown-cat #category {
         width: auto;
     }
@@ -71,5 +101,13 @@
     }
     .search button {
         width: auto;
+    }
+    .products-display {
+        text-align: center;
+    }
+    .mySlides img {
+        width: 100%;
+        height: auto;
+        margin: 0;
     }
 }
