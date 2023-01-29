@@ -9,7 +9,7 @@
 
 .site-id img {
     width: 200px;
-    margin-top: 15px;
+    margin: 5px;
 }
 
 .links {
@@ -19,6 +19,7 @@
 .links li {
     list-style: none;
     padding: 20px;
+    margin: 0;
 }
 
 .links a {
@@ -78,7 +79,7 @@ hr {
     background-color: #fffefe;
     border-radius: 5px;
     height: auto;
-    width: 150px;
+    width: fit-content;
     margin: -18px 0 0 455px;
     border: 1px solid #888888;
     position: absolute;
@@ -164,7 +165,7 @@ hr {
 
 .cat-head h2 {
     background: var(--color-frame);
-    width: 200px;
+    width: fit-content;
     text-align: center;
     padding: 20px;
     margin: auto;
@@ -219,6 +220,7 @@ body {
 .mySlides img {
     width: auto;
     height: 600px;
+    box-shadow: 10px 20px 30px rgb(white, #111, white);
 }
 
 img {
@@ -306,6 +308,12 @@ img {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+.slide-dots {
+    position: absolute;
+    margin-top: -25px;
+    width: -webkit-fill-available;
 }
 
 .active,
@@ -402,6 +410,7 @@ img {
     width: auto;
     margin-top: 10px;
     box-shadow: 15px 5px 10px 10px rgba(221, 169, 27, .5);
+    margin-bottom: 15px
 }
 
 .products-display {
@@ -413,84 +422,120 @@ img {
 
 
 /*footer*/
-.footer{
+
+.footer {
     background-color: var(--color-frame);
 }
+
 .foot-area {
     width: 100%;
     height: auto;
 }
+
 .foot-area p {
-   color: var(--color-white);
+    color: var(--color-white);
 }
+
 .foot-area h2 {
-   color: var(--color-white);
+    color: var(--color-white);
 }
-.top-foot{
+
+.top-foot {
     display: flex;
-    width: fit-content;
+    width: auto;
     margin: auto;
     padding: 50px;
+    justify-content: center;
+    gap: 110px;
 }
+
 .foot1 {
-    width: 200px;
+    width: fit-content;
 }
+
 .foot2 {
-    width: 200px;
+    width: fit-content;
 }
-.foot2 li{
+
+.foot2 li {
     color: var(--color-white);
     padding: 7px;
 }
-.foot2 a{
+
+.foot2 a {
     text-decoration: none;
     color: rgb(22, 148, 231);
 }
-.foot2 a:hover{
+
+.foot2 a:hover {
     color: rgb(43, 54, 61);
 }
+
 .foot3 {
-    width: 200px;
+    width: fit-content;
     text-align: left;
 }
+
 .foot4 {
-    width: 200px;
+    width: fit-content;
     text-align: center;
 }
-.foot1 img{
+
+.foot1 img {
     width: 200px;
 }
-.bottom-foot{
+
+.bottom-foot {
     padding: 20px;
     text-align: center;
 }
-.bottom-foot p{
-   font-size: 12px;
-   color: var(--color-white);
+
+.bottom-foot p {
+    font-size: 12px;
+    color: var(--color-white);
 }
-.bottom-foot i{
-   font-size: 15px;
-   color: var(--color-white);
-   margin-left: 10px;
-   
+
+.bottom-foot i {
+    font-size: 15px;
+    color: var(--color-white);
+    margin-left: 10px;
 }
-.fa-facebook-f{
-  padding: 7px;
-    background-color:rgb(22, 148, 231);;
-width: 30px;
+
+.fa-facebook-f {
+    padding: 7px;
+    background-color: rgb(22, 148, 231);
+    opacity: 1;
+    transition: 0.3s;
+    width: 30px;
 }
-.fa-twitter{
-  padding: 7px;
-    background-color:rgb(61, 163, 231);;
-width: 30px;
+
+.fa-twitter {
+    padding: 7px;
+    background-color: rgb(61, 163, 231);
+    opacity: 1;
+    transition: 0.3s;
+    width: 30px;
 }
-.fa-instagram{
-  padding: 7px;
-    background-color:rgb(235, 42, 42);;
-width: 30px;
+
+.fa-instagram {
+    padding: 7px;
+    background-color: rgb(235, 42, 42);
+    opacity: 1;
+    transition: 0.3s;
+    width: 30px;
 }
-.fa-whatsapp{
-  padding: 7px;
-    background-color:rgb(29, 231, 22);;
-width: 30px;
+
+.fa-whatsapp {
+    padding: 7px;
+    background-color: rgb(29, 231, 22);
+    width: 30px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-whatsapp:hover {
+    opacity: 0.6;
 }
