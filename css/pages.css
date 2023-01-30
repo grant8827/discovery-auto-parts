@@ -73,3 +73,27 @@
 #select-option option {
     font-size: 20px;
 }
+
+/*contact area*/
+.contact-area{
+    display: flex;
+    justify-content: center;
+    gap: 50px
+    
+}
+.contact-area span{
+    color: var(--color-frame);
+}
+#contact-name{
+    padding: 10px;
+    width: 400px;
+}
+#contact-email{
+    padding: 10px;
+    width: 400px;
+}
+#contact-message{
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+}
