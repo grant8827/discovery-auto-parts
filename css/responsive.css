@@ -2,6 +2,9 @@
     .search input {
         width: 400px;
     }
+    .category-list {
+        margin: -18px 0 0 220PX;
+    }
 }
 
 @media only screen and (max-width:912px) {
@@ -21,6 +24,9 @@
     }
     .top-foot {
         flex-wrap: wrap;
+    }
+    .sign-in-area {
+        margin-bottom: 200px;
     }
 }
 
@@ -90,6 +96,39 @@
         height: auto;
         margin: 0;
     }
+    /*login*/
+    .form-sign-in {
+        width: auto;
+        margin: 20px;
+        margin-top: 150px;
+    }
+    #email,
+    #password {
+        width: -webkit-fill-available;
+    }
+    .sign-in-area {
+        margin-bottom: 250px;
+    }
+    /*contact*/
+    .contact-area {
+        display: block;
+    }
+    .contact-details {
+        margin: auto;
+        width: fit-content;
+    }
+    .contact-text-info {
+        width: auto;
+        margin: 20px;
+    }
+    #contact-name,
+    #contact-email,
+    #contact-message {
+        width: -webkit-fill-available;
+    }
+    #btn {
+        width: auto;
+    }
 }
 
 @media only screen and (max-width:576px) {
@@ -109,5 +148,8 @@
         width: 100%;
         height: auto;
         margin: 0;
+    }
+    .category-list {
+        margin: -128px 0 0 140PX;
     }
 }

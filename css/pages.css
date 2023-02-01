@@ -1,4 +1,25 @@
+/*about page*/
+
+.about {
+    margin: 70px 0 550px 0;
+}
+
+.about-2 {
+    width: fit-content;
+    margin: auto;
+}
+
+.about .about-area {
+    width: fit-content;
+    margin: auto;
+}
+
+
 /*my account pare login for*/
+
+.signin-area {
+    margin-bottom: 250px;
+}
 
 .form-sign-in {
     width: fit-content;
@@ -72,4 +93,63 @@
 
 #select-option option {
     font-size: 20px;
+}
+
+
+/*contact area*/
+
+.contact-area {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.contact-area span {
+    color: var(--color-frame);
+}
+
+#contact-name {
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+#contact-email {
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+#contact-message {
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+.contact-info-Detail {
+    margin: 10px;
+}
+
+.contact-info-Detail h2 {
+    color: var(--color-frame);
+}
+
+.contact-text-info {
+    margin: 20px;
+    border: 1px solid #bbb;
+    width: auto;
+    padding: 20px;
+}
+
+#btn {
+    padding: 10px;
+    width: 200px;
+    margin: inherit;
+    color: var(--color-white);
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
