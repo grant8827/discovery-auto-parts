@@ -1,3 +1,4 @@
+//dropdown toggle
 const dropDown = document.getElementById("dropDownCat");
 const downArrow = document.getElementById("toggle");
 
@@ -11,13 +12,13 @@ dropDown.addEventListener("click", function(slow) {
 
 
 
-
+//navbar toggle
 $(document).ready(function() {
     $("#menu-bars").click(function() {
         $(".links").toggle('slow');
     });
 });
-
+//slide
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -44,3 +45,14 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+//login form
+const login = document.getElementById("form-sign-in")
+const btn = document.getElementById("button")
+
+button.addEventListener('login', (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+});
